@@ -1,0 +1,107 @@
+:root{
+    --text-color: #77714c;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/background.png) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+.full-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+.logo-png{
+    padding: 20px;
+    width: 400px;
+    height: auto;
+}
+
+.description{
+    font-size: 64px;
+    font-family: "Merienda", cursive;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+}
+
+.pic{
+    max-width: 490px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: -5px -5px 50px 0px #000000;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pic:hover{
+    transform: scale(1.1);
+}
+
+.atelier{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 120px 50px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    color: var(--text-color);
+}
+
+a{
+    color: var(--text-color);
+}
+
+@media (max-width: 1400px){
+    .atelier{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .description{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 900px){
+    .atelier{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .description{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px){
+    .pic{
+        width: 390px;
+        height: auto;
+    }
+}
+
