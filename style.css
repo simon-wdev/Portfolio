@@ -21,7 +21,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background: url(./Assets/background.png) no-repeat center center fixed;
+  background: url(./Assets/background.jpg) no-repeat center center fixed;
   background-size: cover;
   max-width: 1200px;
   margin: 40px auto 0 auto;
