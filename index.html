@@ -3,92 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <section class="hero">
-        <div><img src="./Assets/Porträt.jpg" alt="Porträt von Simon"/></div>
-        <div class="hi">
-            <p class="hi-text">Hi.</p>
-            <p class="ich-text">Ich</p>
-            <p class="bin-text">bin</p>
-            <p class="simon-text">Simon.</p>
-        </div>
-        <div class="ambitions">
-            <p>"Ich baue Webseiten, lerne täglich dazu und setze meine ersten eigenen Projekte um, in denen ich neues Wissen und Design miteinander verbinde."</p>
+<div class="full-page">
+<div class="hero-bg">
+<section class="container hero">
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-backpack" viewBox="0 0 16 16"><path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/><path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/></svg> Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#lernfelder">Lernfelder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+        <div class="row align-items-center justify-content-center">
+                <div class="hi col-5 col-md-3 mb-3">
+                    <p class="hi-text">Hi.</p>
+                    <p class="ich-text">Ich</p>
+                    <p class="bin-text">bin</p>
+                    <p class="simon-text">Simon.</p>
+                </div>
+            <div class="col-5 col-md-5 py-3 mb-3 text-center">
+                <div>
+                    <img class="rounded-circle img-fluid w-50" src="./Assets/Porträt1.jpg" alt="Porträt von Simon"/>
+                </div>
+            </div>
+               
+            <div class="buttons d-grid row-cols-1 col-lg-3 my-5 py-3 text-center">
+                <a href="https://github.com/simon-wdev" class="my-btn mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg> GitHub</a>
+                <a href="https://www.linkedin.com/in/simon-wachert-645012370/" class="my-btn mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg> LinkedIn</a>
+                <a href="https://github.com/simon-wdev/Logbuch" class="my-btn mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/></svg> Mein Blog</a>
+            </div>
         </div>
     </section>
-
-    
-    
-    <section class="projects">
-        <h2>Projekte:</h2>
-       <div class="project-links">
-    
-    <div class="card-container">
-        <a href="https://simon-wdev.github.io/shmapes-page/"><img class="card" src="./Assets/Shmapes-ProjectCard.gif" alt="Shmapes Projekt" />
-        <div class="overlay">Shmapes - Godot 4.4</div></a>
-    </div>
-
-    <div class="card-container">
-        <a href="./landingpage/webdemo.html"><img class="card" src="./Assets/focusflow_preview.jpg" alt="FocusFlow Projekt" />
-        <div class="overlay">FocusFlow - CSS WebDemo</div></a>
-    </div>
-
-    <div class="card-container">
-        <a href="./atelier/atelier-index.html"><img class="card" src="./Assets/wolf.jpg" alt="SilentCove Projekt" />
-        <div class="overlay">SilentGrove - CSS WebDemo</div></a>
-    </div>
-
 </div>
-    </section>
 
-
-    <section class="about">
-       <h2>Über mich:</h2>
-        <p>Ich bin Simon Wachert, 27 Jahre alt, und aktuell auf meinem Weg in die Webentwicklung.</p>
-        <p>Momentan setze ich eigene Projekte um und arbeite daran, meine Fähigkeiten im Front- und Backend Schritt für Schritt auszubauen.</p>
-        <p>Der Fokus liegt dabei aktuell auf HTML, CSS, Flexbox und Grid. Außerdem habe ich in den letzten Wochen Bootstrap kennengelernt und widme mich nun intensiv JavaScript.</p>
-        <p>Nebenbei entwickle ich auch mein eigenes GameDev-Projekt Shmapes (in Godot 4.4), bei dem ich viel Erfahrung in Problemlösung, UI-Design und kreativer Umsetzung sammle.</p>
-        <p>Mein Ziel ist es, moderne, funktionale und ansprechende Webseiten zu bauen und dabei ständig dazuzulernen.</p>
-        <p>Ich bin Quereinsteiger mit technischer Vorbildung und einer neurodiversen Perspektive auf die Welt.</p>
-        <p>Struktur, Klarheit und kreative Freiheit sind mir wichtig. Mein Weg war nicht immer klassisch, aber genau das hat mich dahin geführt, wo ich heute mit Begeisterung und Fokus an meiner Zukunft im Bereich Softwareentwicklung arbeite.</p>
-        <p>Was ich dabei lerne, halte ich auf dieser Portfolioseite fest. Das fühlt sich endlich nach etwas an, das wirklich zu mir passt.</p>
-    </section>
+    <div class="ambitions container col-md-8 col-10 my-5 p-3">
+        <p>Wilkommen auf meinem Portfolio! Ich bin angehender Webentwickler mit dem Ziel moderne Anwendungen und Spiele zu gestalten. Nach vielen Umwegen habe ich meine Leidenschaft für Code und Design entdeckt. Ich würde mich freuen, wenn du dir die Zeit nimmst und dir meine Projekte anschaust.</p>
+    </div>
     
+    <section class="projects container mb-5">
+
+        <h2 class="mb-5 p-3 heading">Projekte:</h2>
+<div class="cards mb-5">
+    <div class="project-links">
+        <div class="card" style="width: 18rem;">
+            <img src="./Assets/Shmapes-ProjectCard.gif" class="card-img-top" alt="Vorschaubild Videospiel-Projekt">
+        <div class="card-body">
+            <h5 class="card-title">shmapes.</h5>
+            <p class="card-text">Ein kleines Bullet-Hell-Spiel in Godot 4.4 zur Übung von Logik, Scripting und Gameplay. Fokus auf einfache Formen, Partikeleffekte und responsive Steuerung.</p>
+            <a href="https://simon-wdev.github.io/shmapes-page/" class="btn btn-outline-success">Ansehen</a>
+        </div>
+    </div>
+</div>
+
+    <div class="project-links">
+        <div class="card" style="width: 18rem;">
+            <img src="./Assets/focusflow_preview.jpg" class="card-img-top" alt="Vorschaubild FokusFlow">
+        <div class="card-body">
+            <h5 class="card-title">FocusFlow</h5>
+            <p class="card-text">Eine minimalistische Landing-Page, erstellt zur Übung von CSS, Flexbox und Grid. Konzipiert als ruhige, strukturierte Einführungsseite mit responsivem Layout.</p>
+            <a href="./landingpage/webdemo.html" class="btn btn-outline-success">Ansehen</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="project-links">
+        <div class="card" style="width: 18rem;">
+            <img src="./Assets/deer.jpg" class="card-img-top" alt="Vorschaubild Atelier-Projekt">
+        <div class="card-body">
+            <h5 class="card-title">Silent Grove</h5>
+            <p class="card-text">Ein künstlerisches Portfolio-Layout, gestaltet zur Übung von CSS-Grid und Flexbox. Zeigt einen klaren Aufbau für Galerien und kreative Projektpräsentationen.</p>
+            <a href="./atelier/atelier-index.html" class="btn btn-outline-success">Ansehen</a>
+       </div>
+       </div>
+</section>
 
 
-    <section class="skills">
-        <h2>Skills:</h2>
+<section id="about" class="container mb-5 p-3">
+    <h2 class="mb-3">Über mich:</h2>
+        <p>Ich bin Simon Wachert, 27 Jahre alt, und aktuell auf meinem Weg in die Webentwicklung.
+        Momentan setze ich eigene Projekte um und arbeite daran, meine Fähigkeiten im Front- und Backend Schritt für Schritt auszubauen.
+        Der Fokus liegt dabei aktuell auf HTML, CSS, Flexbox und Grid. Außerdem habe ich in den letzten Wochen Bootstrap kennengelernt und widme mich nun intensiv JavaScript.</p>
+        <p>Nebenbei entwickle ich auch mein eigenes GameDev-Projekt Shmapes (in Godot 4.4), bei dem ich viel Erfahrung in Problemlösung, UI-Design und kreativer Umsetzung sammle.</p>
+        <p>Mein Ziel ist es, moderne, funktionale und ansprechende Webseiten zu bauen und dabei ständig dazuzulernen.
+        Ich bin Quereinsteiger mit technischer Vorbildung und einer neurodiversen Perspektive auf die Welt.
+        Struktur, Klarheit und kreative Freiheit sind mir wichtig. Mein Weg war nicht immer klassisch, aber genau das hat mich dahin geführt, wo ich heute mit Begeisterung und Fokus an meiner Zukunft im Bereich Softwareentwicklung arbeite.
+        Was ich dabei lerne, halte ich auf dieser Portfolioseite fest. Das fühlt sich endlich nach etwas an, das wirklich zu mir passt.</p>
+</section>
+
+<section id="lernfelder" class="learning">
+    <div class="container px-4 py-5" id="hanging-icons"> 
+        <h2 class="pb-2 border-bottom">Was lerne ich gerade?</h2> 
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"> 
+            <div class="col d-flex align-items-start"> 
+                <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+                    </svg> 
+                </div> 
+                <div> 
+                    <h3 class="fs-2 text-body-emphasis">HTML & CSS</h3> 
+                    <p>Ich bringe mir gerade bei, wie man Webseiten mit HTML und CSS sinnvoll strukturiert und gestaltet. Dabei achte ich darauf, sauberes, verständliches Markup zu schreiben und übe den Umgang mit Dingen wie Flexbox, Grid und Media Queries. Noch klappt nicht alles auf Anhieb, aber ich verstehe immer besser, wie man Layouts baut, die auch auf kleineren Bildschirmen gut aussehen. Ich wiederhole die Grundlagen regelmäßig, um mich damit sicher zu fühlen. Vorallem Flexbox und Grid kann man nicht oft genug üben.</p>
+                </div> 
+            </div> 
+        <div class="col d-flex align-items-start"> 
+            <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-javascript" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM9.053 7.596v3.127l-.007 1.752q0 .498-.186.752t-.556.263q-.342 0-.528-.234-.185-.234-.185-.684v-.175H6.37v.185q0 .665.253 1.113.255.45.703.674.44.225 1.016.225.88 0 1.406-.498.527-.498.527-1.485l.007-1.752V7.596zm3.808-.108q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518"/>
+                </svg> 
+            </div> 
+            <div> 
+                <h3 class="fs-2 text-body-emphasis">JavaScript</h3> 
+                <p>JavaScript ist für mich noch recht neu, aber ich arbeite mich gerade durch die Grundlagen. Ich lerne zum Beispiel, wie man mit Variablen, Funktionen und Events arbeitet und wie man einfache Dinge auf einer Seite interaktiv macht. Es ist manchmal knifflig, aber auch sehr spannend, weil ich endlich eigene Logik umsetzen kann. In der nächsten Zeit werde ich viel JavaScript weiter vertiefen und habe geplant kleine Anwendungen selbst umzusetzen.</p>
+            </div> 
+        </div> 
+        <div class="col d-flex align-items-start"> 
+            <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3z"/>
+                </svg> 
+            </div> 
+            <div> 
+                <h3 class="fs-2 text-body-emphasis">Bootstrap</h3> 
+                <p>Bootstrap nutze ich, um schneller Layouts zu bauen, ohne alles von Grund auf selbst stylen zu müssen. Ich experimentiere mit dem Grid-System, Buttons, Cards und nutze Utility-Klassen, um Designs einfacher umzusetzen. Es hilft mir gerade sehr, ein Gefühl für Struktur und Design zu bekommen. gleichzeitig versuche ich zu verstehen, was dort im Hintergrund passiert. Sobald ich mich mit Bootstrap etwas vertrauter fühle, habe ich geplant Tailwind CSS zu lernen.</p>
+            </div> 
+        </div> 
+    </div> 
+</div>
+
+
+
+
+
+</section>
+
+
+    <section class="skills container mb-5 p-3">
+        <h2 class="mb-3">Skills:</h2>
         <div class="skill-buttons">
-            <p class="badge">HTML</p>
-            <p class="badge">CSS</p>
-            <p class="badge">Flexbox</p>
-            <p class="badge">Grid</p>
-            <p class="badge">GD-Script</p>
-            <p class="badge">Bootstrap</p>
+            <p class="badges">HTML</p>
+            <p class="badges">CSS</p>
+            <p class="badges">Flexbox</p>
+            <p class="badges">Grid</p>
+            <p class="badges">GD-Script</p>
+            <p class="badges">Bootstrap</p>
         </div>
         </section>
 
-    <section class="contact">
-        <h2>Interessiert? Kontakt:</h2>
-        <div class="contact-flex">
+<div class="hero-bg">
+    <section id="kontakt" class="contact container p-3">
+        <h2 class="my-3 mb-5">Fragen oder Anregungen? Kontakt:</h2>
         <div class="contact1">
-        <p>Simon Wachert</p>
+        <p class="mb-1">Simon Wachert</p>
+        <p class="mb-1">Friedrichshafen - Germany</p>
         <a href="mailto:simonw.dev@gmail.com">simonw.dev@gmail.com</a>
-        <p>Friedrichshafen - Germany</p>
-        </div>
-        <div class="contact-buttons">
-        <a href="https://github.com/simon-wdev"><img class="github-logo logo" src="./Assets/github.png"></a>
-        <a href="https://www.linkedin.com/in/simon-wachert-645012370/"><img class="linkedin-logo logo" src="./Assets/linkedin.png"></a>
-        </div>
         </div>
     </section>
 
-</body>
+
+
+
 <footer class="footer">
     <p>2025 - Simon Wachert</p>
+    <a href="#" class="up"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/></svg></a>
 </footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
 </html>
