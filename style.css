@@ -150,6 +150,17 @@ footer{
     margin-top: 50px;
     padding: 10px;
     opacity: 0.5;
+    color: var(--text-color);
+}
+
+.logbuch{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.logbuch:hover{
+    color: white;
 }
 
 .up{
